@@ -217,7 +217,28 @@ public class FrmConferencias extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRegresarconfActionPerformed
 
     private void btnRegistarconfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistarconfActionPerformed
-        // TODO add your handling code here:
+    cargarConferencias();
+
+        String titulo = txtTituloconf.getText().trim();
+        String salon = txtsalonconf.getText().trim();
+        int indice = cbExpositor.getSelectedIndex();
+
+        if (indice == -1) {
+            JOptionPane.showMessageDialog(this, "Primero debe registrar un expositor");
+        } else if (titulo.isEmpty() || salon.isEmpty()) {
+            JOptionPane.showMessageDialog(this, "Complete todos los campos");
+        } else if (titulo.contains(",") || salon.contains(",")) {
+            JOptionPane.showMessageDialog(this, "No use comas en los datos");
+        } else {
+            String expositorElegido = expositores.get(indice).getNombre();
+            int id = lista.size() + 1;
+            conferencia nueva = new conferencia(id, titulo, expositorElegido, salon);
+            lista.add(nueva);
+            guardarConferencias();
+            mostrarAgenda();
+            limpiar();
+            JOptionPane.showMessageDialog(this, "Conferencia registrada");
+        }
     }//GEN-LAST:event_btnRegistarconfActionPerformed
 
     private void cbExpositorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbExpositorActionPerformed

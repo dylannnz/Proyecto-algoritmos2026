@@ -152,7 +152,8 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_btnExpositoresActionPerformed
 
     private void btnConferenciasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConferenciasActionPerformed
-    frmConferencias.setVisible(true);  
+    frmConferencias.actualizar();
+    frmConferencias.setVisible(true); 
     }//GEN-LAST:event_btnConferenciasActionPerformed
 
     private void btnEstudiantesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEstudiantesActionPerformed
