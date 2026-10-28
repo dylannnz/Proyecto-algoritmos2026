@@ -9,7 +9,37 @@ package umg.proyecto2026;
  * @author dygrz
  */
 public class expositor {
-    public int idexpositor;
-    public String nombre;
-    public String especialidad;
+    private int idExpositor;
+    private String nombre;
+    private String especialidad;
+
+    public expositor(int idExpositor, String nombre, String especialidad) {
+        this.idExpositor = idExpositor;
+        this.nombre = nombre;
+        this.especialidad = especialidad;
+    }
+
+    public int getIdExpositor() {
+        return idExpositor;
+    }
+
+    public void setIdExpositor(int idExpositor) {
+        this.idExpositor = idExpositor;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getEspecialidad() {
+        return especialidad;
+    }
+
+    public void setEspecialidad(String especialidad) {
+        this.especialidad = especialidad;
+    }
 }

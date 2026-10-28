@@ -9,8 +9,47 @@ package umg.proyecto2026;
  * @author dygrz
  */
 public class conferencia {
-    public int idconferencia;
-    public String titulo;
-    public String expositor_asigando;
-    public String salon;
+    private int idConferencia;
+    private String titulo;
+    private String expositorAsignado;
+    private String salon;
+
+    public conferencia(int idConferencia, String titulo, String expositorAsignado, String salon) {
+        this.idConferencia = idConferencia;
+        this.titulo = titulo;
+        this.expositorAsignado = expositorAsignado;
+        this.salon = salon;
+    }
+
+    public int getIdConferencia() {
+        return idConferencia;
+    }
+
+    public void setIdConferencia(int idConferencia) {
+        this.idConferencia = idConferencia;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public String getExpositorAsignado() {
+        return expositorAsignado;
+    }
+
+    public void setExpositorAsignado(String expositorAsignado) {
+        this.expositorAsignado = expositorAsignado;
+    }
+
+    public String getSalon() {
+        return salon;
+    }
+
+    public void setSalon(String salon) {
+        this.salon = salon;
+    }
 }
