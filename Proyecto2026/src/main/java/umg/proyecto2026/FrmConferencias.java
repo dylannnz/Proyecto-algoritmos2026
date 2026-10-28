@@ -124,7 +124,7 @@ public class FrmConferencias extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnRegresarconfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarconfActionPerformed
-        // TODO add your handling code here:
+    this.dispose();
     }//GEN-LAST:event_btnRegresarconfActionPerformed
 
     /**

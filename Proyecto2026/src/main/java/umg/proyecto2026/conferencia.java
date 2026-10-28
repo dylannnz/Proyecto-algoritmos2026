@@ -11,6 +11,6 @@ package umg.proyecto2026;
 public class conferencia {
     public int idconferencia;
     public String titulo;
-    public String expositorasigando;
+    public String expositor_asigando;
     public String salon;
 }

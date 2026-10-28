@@ -18,6 +18,7 @@ public class FrmReporte extends javax.swing.JFrame {
     public FrmReporte() {
         initComponents();
         setLocationRelativeTo(null);
+        setTitle("Reporte");
     }
 
     /**
@@ -48,6 +49,11 @@ public class FrmReporte extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTextArea1);
 
         btnGenerarreporte.setText("Generar Reporte");
+        btnGenerarreporte.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGenerarreporteActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -83,8 +89,12 @@ public class FrmReporte extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnRegresarconfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarconfActionPerformed
-        // TODO add your handling code here:
+    this.dispose();
     }//GEN-LAST:event_btnRegresarconfActionPerformed
+
+    private void btnGenerarreporteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGenerarreporteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnGenerarreporteActionPerformed
 
     /**
      * @param args the command line arguments

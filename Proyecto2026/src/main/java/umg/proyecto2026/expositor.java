@@ -11,5 +11,5 @@ package umg.proyecto2026;
 public class expositor {
     public int idexpositor;
     public String nombre;
-    public String esdpecialidad;
+    public String especialidad;
 }

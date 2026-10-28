@@ -159,6 +159,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Exportar"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnexportarexpositorActionPerformed"/>
+      </Events>
     </Component>
     <Container class="javax.swing.JScrollPane" name="jScrollPane2">
       <AuxValues>
@@ -206,6 +209,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Mostrar Expositores"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnmostrarActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnregresarexp">
       <Properties>

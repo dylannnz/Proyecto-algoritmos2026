@@ -70,6 +70,11 @@ public class FrmExpositores extends javax.swing.JFrame {
         jLabel3.setText("Especialidad");
 
         btnexportarexpositor.setText("Exportar");
+        btnexportarexpositor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnexportarexpositorActionPerformed(evt);
+            }
+        });
 
         jTable2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -85,6 +90,11 @@ public class FrmExpositores extends javax.swing.JFrame {
         jScrollPane2.setViewportView(jTable2);
 
         btnmostrar.setText("Mostrar Expositores");
+        btnmostrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnmostrarActionPerformed(evt);
+            }
+        });
 
         btnregresarexp.setText("Regresar");
         btnregresarexp.addActionListener(new java.awt.event.ActionListener() {
@@ -163,8 +173,16 @@ public class FrmExpositores extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnregresarexpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnregresarexpActionPerformed
-    new FrmExpositores().setVisible(false); 
+    this.dispose();
     }//GEN-LAST:event_btnregresarexpActionPerformed
+
+    private void btnexportarexpositorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnexportarexpositorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnexportarexpositorActionPerformed
+
+    private void btnmostrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnmostrarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnmostrarActionPerformed
 
     /**
      * @param args the command line arguments
