@@ -41,10 +41,10 @@ public class FrmExpositores extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         btnexportarexpositor = new javax.swing.JButton();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        jTable2 = new javax.swing.JTable();
         btnmostrar = new javax.swing.JButton();
-        btnregresarexp = new javax.swing.JButton();
+        btnregresarexpositores = new javax.swing.JButton();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        taExpositores = new javax.swing.JTextArea();
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -76,19 +76,6 @@ public class FrmExpositores extends javax.swing.JFrame {
             }
         });
 
-        jTable2.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null}
-            },
-            new String [] {
-                "Nombre", "Nombre", "Especialidad"
-            }
-        ));
-        jScrollPane2.setViewportView(jTable2);
-
         btnmostrar.setText("Mostrar Expositores");
         btnmostrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -96,12 +83,16 @@ public class FrmExpositores extends javax.swing.JFrame {
             }
         });
 
-        btnregresarexp.setText("Regresar");
-        btnregresarexp.addActionListener(new java.awt.event.ActionListener() {
+        btnregresarexpositores.setText("Regresar");
+        btnregresarexpositores.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnregresarexpActionPerformed(evt);
+                btnregresarexpositoresActionPerformed(evt);
             }
         });
+
+        taExpositores.setColumns(20);
+        taExpositores.setRows(5);
+        jScrollPane3.setViewportView(taExpositores);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -109,7 +100,7 @@ public class FrmExpositores extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(19, 19, 19)
-                .addComponent(btnregresarexp)
+                .addComponent(btnregresarexpositores)
                 .addGap(42, 42, 42)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel1)
@@ -131,13 +122,14 @@ public class FrmExpositores extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jSeparator1))
             .addGroup(layout.createSequentialGroup()
-                .addGap(36, 36, 36)
-                .addComponent(btnmostrar)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(91, Short.MAX_VALUE)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 520, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(54, 54, 54))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(36, 36, 36)
+                        .addComponent(btnmostrar))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(82, 82, 82)
+                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 456, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(70, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -150,7 +142,7 @@ public class FrmExpositores extends javax.swing.JFrame {
                             .addComponent(jLabel1)))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(btnregresarexp)))
+                        .addComponent(btnregresarexpositores)))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtnombreexpositor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -164,17 +156,17 @@ public class FrmExpositores extends javax.swing.JFrame {
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(btnmostrar)
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 375, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(45, Short.MAX_VALUE))
+                .addGap(37, 37, 37)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(27, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnregresarexpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnregresarexpActionPerformed
+    private void btnregresarexpositoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnregresarexpositoresActionPerformed
     this.dispose();
-    }//GEN-LAST:event_btnregresarexpActionPerformed
+    }//GEN-LAST:event_btnregresarexpositoresActionPerformed
 
     private void btnexportarexpositorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnexportarexpositorActionPerformed
         // TODO add your handling code here:
@@ -213,15 +205,15 @@ public class FrmExpositores extends javax.swing.JFrame {
     private javax.swing.JButton btnexportarexpositor;
     private javax.swing.JButton btnmostrar;
     private javax.swing.JButton btnregresare;
-    private javax.swing.JButton btnregresarexp;
+    private javax.swing.JButton btnregresarexpositores;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTable jTable1;
-    private javax.swing.JTable jTable2;
+    private javax.swing.JTextArea taExpositores;
     private javax.swing.JTextField txtespecialidad;
     private javax.swing.JTextField txtidexpositor;
     private javax.swing.JTextField txtnombreexpositor;

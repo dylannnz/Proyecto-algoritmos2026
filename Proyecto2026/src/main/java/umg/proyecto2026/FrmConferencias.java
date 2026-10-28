@@ -59,6 +59,11 @@ public class FrmConferencias extends javax.swing.JFrame {
         jLabel4.setText("Salon:");
 
         btnRegistarconf.setText("Registrar");
+        btnRegistarconf.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRegistarconfActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -126,6 +131,10 @@ public class FrmConferencias extends javax.swing.JFrame {
     private void btnRegresarconfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarconfActionPerformed
     this.dispose();
     }//GEN-LAST:event_btnRegresarconfActionPerformed
+
+    private void btnRegistarconfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistarconfActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRegistarconfActionPerformed
 
     /**
      * @param args the command line arguments

@@ -47,6 +47,11 @@ public class FrmAsistencia extends javax.swing.JFrame {
         jLabel1.setText("Carnet del estudiante:");
 
         btnAsistencia.setText("Registrar Asistencia");
+        btnAsistencia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAsistenciaActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -88,6 +93,10 @@ public class FrmAsistencia extends javax.swing.JFrame {
     private void btnRegresarasistenciaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarasistenciaActionPerformed
     this.dispose();
     }//GEN-LAST:event_btnRegresarasistenciaActionPerformed
+
+    private void btnAsistenciaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAsistenciaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnAsistenciaActionPerformed
 
     /**
      * @param args the command line arguments

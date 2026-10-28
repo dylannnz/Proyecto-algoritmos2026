@@ -9,7 +9,11 @@ package umg.proyecto2026;
  * @author apere
  */
 public class Menu extends javax.swing.JFrame {
-    
+    private FrmExpositores frmExpositores = new FrmExpositores();
+    private FrmConferencias frmConferencias = new FrmConferencias();
+    private FrmEstudiantes frmEstudiantes = new FrmEstudiantes();
+    private FrmAsistencia frmAsistencia = new FrmAsistencia();
+    private FrmReporte frmReporte = new FrmReporte();
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Menu.class.getName());
 
     /**
@@ -133,23 +137,23 @@ public class Menu extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnExpositoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExpositoresActionPerformed
-        new FrmExpositores().setVisible(true);
+    frmExpositores.setVisible(true);
     }//GEN-LAST:event_btnExpositoresActionPerformed
 
     private void btnConferenciasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConferenciasActionPerformed
-        new FrmConferencias().setVisible(true);        
+    frmConferencias.setVisible(true);  
     }//GEN-LAST:event_btnConferenciasActionPerformed
 
     private void btnEstudiantesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEstudiantesActionPerformed
-        new FrmEstudiantes().setVisible(true);
+    frmEstudiantes.setVisible(true);
     }//GEN-LAST:event_btnEstudiantesActionPerformed
 
     private void btnAsistenciaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAsistenciaActionPerformed
-        new FrmAsistencia().setVisible(true);        
+    frmAsistencia.setVisible(true);   
     }//GEN-LAST:event_btnAsistenciaActionPerformed
 
     private void btnReporteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReporteActionPerformed
-        new FrmReporte().setVisible(true);        
+    frmReporte.setVisible(true);     
     }//GEN-LAST:event_btnReporteActionPerformed
 
     /**
