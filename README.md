@@ -2,7 +2,7 @@
 
 Aplicación de escritorio en **Java Swing** para administrar la logística de un Congreso Estudiantil Universitario: registrar expositores, programar conferencias, inscribir estudiantes, controlar la asistencia el día del evento y generar un reporte final. Los datos se guardan en archivos `.csv`, así que se conservan al cerrar y volver a abrir el programa.
 
-**Autor:** Dylan Zuleta (`dygrz`) · Octubre 2026
+**Autores:** Dylan Zuleta ([`dylannnz`](https://github.com/dylannnz)) y Sara Perez ([`aby-06m`](https://github.com/aby-06m)) · Octubre 2026
 **Curso:** Algoritmos · Universidad Mariano Gálvez
 **Entorno:** Apache NetBeans · Maven · Java 21 · paquete `umg.proyecto2026`
 
@@ -202,6 +202,11 @@ Ejemplos:
 
 ---
 
-## ✍️ Autor
+## ✍️ Autores
 
-**Dylan Zuleta (`dygrz`)** · Proyecto Final de Algoritmos · Octubre 2026
+| Nombre | GitHub |
+|---|---|
+| **Dylan Zuleta** | [`dylannnz`](https://github.com/dylannnz) |
+| **Sara Perez** | [`aby-06m`](https://github.com/aby-06m) |
+
+Proyecto Final de Algoritmos · Octubre 2026
